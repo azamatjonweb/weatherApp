@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../assets/webfonts/Poppins-Regular.ttf");
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222;
+    background-image: url("https://source.unsplash.com/1920x1080/?weather");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 480px;
+    /* height: 85%; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 45px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+.container .form  {
+    width: 65%;
+    height: 50px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.container .form input {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #555555;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.container .form input::placeholder {
+    color: #555555;
+}
+
+.container .form button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    color: #555555;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.container .weather-information {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+.container .weather-information img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.container .weather-information h1 {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.container .weather-information h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -15px;
+    text-align: center;
+}
+
+.container .weather-information .details {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .weather-information .details .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.container .weather-information .details .col img {
+    width: 50px;
+    margin-top: auto;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 28px;
+}
